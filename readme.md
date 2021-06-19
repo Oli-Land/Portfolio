@@ -4,11 +4,10 @@ readme
 ## *Oliver Landreth*
 
 
-A link (URL) to your published portfolio website
+https://oli-land.github.io/Portfolio/index.html
 
-A link to your code repository (repo)
+https://github.com/Oli-Land/Portfolio/
 
-Ensure the repo is accessible by your Educators
 
 
 # OliLand
