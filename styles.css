@@ -14,7 +14,7 @@ body {
     background-color: #454645;
     font-family: Helvetica, sans-serif;
     color:#01352c;
-    background-image: url("../src/images/background_wallpaper.jpg");
+    background-image: url("./images/background_wallpaper.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
