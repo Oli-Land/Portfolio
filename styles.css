@@ -1,0 +1,362 @@
+
+/* Styling written for phone sized devices. 
+Breakpoints automatically modify styles to display correctly on larger devices.
+Activates above 600px and 1000px */
+
+
+
+/* GENERAL FORMATTING-----------------------------> */
+
+
+/* Background and font for all content between nav bar and footer  */
+
+body {
+    background-color: #454645;
+    font-family: Helvetica, sans-serif;
+    color:#01352c;
+    background-image: url("../src/images/background_wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+
+/* Navbar */ 
+
+#navBar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #01352c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 2;
+    
+}
+
+
+/* Homepage name/link in nav bar */
+
+#homeTextName {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    color: #fff;
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#homeTextName a:link {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+#homeTextName a:visited {
+    color: #ffffff;
+}
+
+#homeTextName a:hover {
+    color: #1bc98e;
+}
+
+#homeTextName a:active {
+    color: #1bc98e;
+}
+
+
+/*Page links in top nav*/
+
+#navLinks {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.navSection {
+    width: 25%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navSection a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navSection a:visited {
+    color: #ffffff;
+}
+
+.navSection a:active {
+    color: #1bc98e;
+}
+
+.navSection a:hover {
+    color: #1bc98e;
+}
+
+
+/* Main content cards */
+
+#content {
+    height: 1000px;
+    width: 280px;    
+    position: absolute;    
+    top: 100px;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%, -0px);
+    padding: 10px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+
+/* Footer */
+
+#footer {
+    background-color: #000000;
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-end;
+}
+
+.footerIcon {    
+    width: 40px;
+    padding: 30px;
+    
+}
+
+
+/* INDEX PAGE-----------------------------> */
+
+/* Main page biography text */
+
+#biography {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-style:double;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+
+/* Main page biography picture */
+
+#profilePicture {
+    height: 200px;
+    width: 200px;
+    
+}
+
+
+/* Main page second info card */
+
+#skillsFocus {
+    width: 280px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-style: double;
+    text-align: left;
+    margin: 5px;
+    padding: 10px;
+   
+}
+
+
+/* EXPERIENCE PAGE-----------------------------> */
+
+
+/* Remove underline on link for resume */
+
+#resumeLink {
+    text-decoration: none;
+
+}   
+
+
+/* PROJECTS PAGE-----------------------------> */
+
+
+/* Blog cards. Stretch to fit content size */
+
+#blogsContent {
+    position: absolute;    
+    top: 100px;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%, -0px);
+    padding: 10px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.blogs {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-style: inset;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* 
+.blogLink a:link {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.blogLink a:hover {
+    color: #1bc98e;
+}
+
+.blogLink a:visited {
+    color: #ffffff;
+}
+*/
+
+
+/* CONNECT PAGE-----------------------------> */
+
+
+/* Contact form */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(180, 169, 169);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #1ab682;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #01352c;
+}
+  
+#contactForm {
+    border-radius: 5px;
+    background-color: #136f8b;
+    padding: 20px;
+
+}
+
+
+/* ABOVE 600px BREAKPOINT MODIFIERS-----------------------------> */
+
+@media only screen and (min-width: 600px) {
+
+    /* Locks home link to left margin */
+
+    #homeTextName {
+        justify-content:flex-start;
+        left: auto;
+        margin-left: 30px;
+
+    }
+
+
+    /* Nav links stay towards right margin */
+
+    #navLinks {
+        justify-content: flex-end;
+        
+    }
+
+    /* Cards increase in size. Remain fixed dimensions */
+
+    #content { 
+        height: 650px;
+        width: 500px;
+    
+    }
+
+    #bibliography {        
+        height: 450px;
+        width: 500px;
+
+    }
+
+    #skillsFocus {
+        height: 150px;
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+                        
+    }
+
+}
+
+
+/* 1000px BREAKPOINT MODIFIERS-----------------------------> */
+
+@media only screen and (min-width: 1000px) {
+    
+    #content { 
+        height: 650px;
+        width: 850px;
+    
+    }
+
+    #bibliography {
+        height: 300px;
+        width: 850px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    #skillsFocus {        
+        flex-direction: row;
+        height: 200px;
+        width: 850px;
+        
+    }
+
+}
